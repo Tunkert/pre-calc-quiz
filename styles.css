@@ -1,0 +1,97 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	max-width: 1000px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #333;
+	padding: 0 5px;
+}
+
+.mobile-menu {
+	display: none;
+}
+	
+.hamburger-bar {
+	display: none;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+}
+
+.logo {
+	float: left;
+	margin: 15px 0 0 0;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+}
+	
+.desktop-menu {
+	float: right;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.grid-3 {
+	flex-basis: 33%;
+	padding: 10px;
+	min-height: 300px;
+}
+
+p {
+	font-size: 1.1rem;
+	}
+
+/*
+font styles
+*/
+	
+.center {
+	text-align: center;
+}
+
+.display-mobile {
+	display: block;
+}
+
+.display-mobile li {
+	width: 100%;
+}
+
+/*
+media queries
+*/
+
+@media(max-width: 600px) {
+	.desktop-menu {
+		display: none;
+	}
+	.hamburger-bar {
+		display: block;
+		float: right;
+		margin: 10px 0;
+		transform: rotate(90deg);
+	}
+	.mobile-menu li {
+		display: inline-block;
+		width: 100%;
+	}
+	.grid-3 {
+		flex-basis: 100%;
+	}
+}
+
+
